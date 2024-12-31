@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgWisata"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/mesjid_raya"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imgWisata"
+            android:layout_marginStart="10dp"
+            android:textSize="24sp"
+            android:text="Nama Wisata"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNama"
+            android:layout_toEndOf="@+id/imgWisata"
+            android:orientation="horizontal"
+            android:id="@+id/LLNoTlp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imgWisata"
+                android:layout_below="@id/tvNama"
+                android:layout_marginStart="10dp"
+                android:textSize="14sp"
+                android:text="No tlp :"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/tvNoTlp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imgWisata"
+                android:layout_below="@id/tvNama"
+                android:layout_marginStart="10dp"
+                android:textSize="14sp"
+                android:text="083181822246"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/LLNoTlp"
+            android:layout_toEndOf="@+id/imgWisata">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNoTlp"
+                android:layout_toEndOf="@+id/imgSekolah"
+                android:text="Alamat : "
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:id="@+id/tvAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNoTlp"
+                android:layout_toEndOf="@+id/imgWisata"
+                android:text="Alamat "
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
